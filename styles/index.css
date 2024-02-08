@@ -11,7 +11,7 @@
   font-weight: 300;
 }
 
-.shopping__button, .shopping__number, .shopping__lor, .shopping__quantity, .footer__line, .footer__email-icon, .footer__call, .shares__button, .shares-main, .about__btn, .header .buy__counter, .header .buy__favorite, .header .buy, .header .phone__icon, .header__form, .header__register {
+.shopping__button, .shopping__number, .shopping__lor, .shopping__quantity, .footer__line, .footer__icon, .shares__button, .shares-main, .about__btn, .header .buy__counter, .header .buy__favorite, .header .buy, .header .phone__icon, .header__form, .header__register {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@
 .container {
   width: 100%;
   min-height: 100%;
-  background: url("../image/14.png");
+  background: url("../image/background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -158,6 +158,7 @@
   flex-direction: row;
   font-size: 15px;
   margin: 0px 5px;
+  cursor: pointer;
 }
 .header__line {
   width: 1px;
@@ -240,6 +241,7 @@
 }
 .header .phone__icon:hover {
   background-color: #8C3213;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .header .phone__icon:hover svg {
   fill: #ffffff;
@@ -317,6 +319,7 @@
 }
 .header .buy__favorite:hover {
   background-color: #8C3213;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .header .buy__favorite:hover .buy__shopIcon {
   transition: 0.3s ease;
@@ -404,6 +407,7 @@
     z-index: 2;
     max-height: 0;
     transition: 0.6s ease;
+    margin-left: 0px;
   }
   .header .active {
     max-height: 500px;
@@ -446,6 +450,9 @@
     height: 40px;
     border: 1px solid #fff;
     border-radius: 50%;
+  }
+  .header .buy-mobile__curcleMobile svg {
+    fill: white;
   }
   .header .buy-mobile__curcleMobile div {
     position: absolute;
@@ -760,21 +767,21 @@
   height: 26%;
   top: -14%;
   right: 2%;
-  background-image: url("../image/20.png");
+  background-image: url("../image/leaf1.png");
 }
 .info-shop__leaf2 {
   width: 31%;
   height: 26%;
   bottom: 15%;
   left: -19%;
-  background-image: url("../image/21.png");
+  background-image: url("../image/leaf2.png");
 }
 .info-shop__leaf3 {
   width: 19%;
   height: 16%;
   bottom: 10%;
   left: -14%;
-  background-image: url("../image/20.png");
+  background-image: url("../image/leaf1.png");
 }
 @media (max-width: 1000px) {
   .info-shop__row {
@@ -929,6 +936,8 @@
 }
 .about__image img {
   max-width: 100%;
+  border-top-right-radius: 171px;
+  border-bottom-left-radius: 200px;
 }
 .about__h1 {
   font-size: clamp(25px, 4.5vw, 55px);
@@ -949,7 +958,7 @@
   height: 32%;
   left: -8%;
   bottom: 16%;
-  background-image: url("../image/21.png");
+  background-image: url("../image/leaf2.png");
 }
 .about__leaf2 {
   position: absolute;
@@ -958,7 +967,7 @@
   height: 20%;
   left: 13%;
   bottom: -3%;
-  background-image: url("../image/20.png");
+  background-image: url("../image/leaf1.png");
 }
 .about__text-info {
   width: 540px;
@@ -1142,9 +1151,6 @@
   cursor: pointer;
   transition: 0.3s ease;
 }
-.swiper-slide__li:hover {
-  box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.15);
-}
 .swiper-slide__image {
   width: 100%;
   display: flex;
@@ -1165,13 +1171,14 @@
   cursor: pointer;
   transition: 0.3s ease;
 }
+.swiper-slide__icon svg {
+  fill: #8C3213;
+}
 .swiper-slide__icon:hover {
   background-color: #8C3213;
-  color: pointer;
 }
-.swiper-slide__icon:hover svg path {
+.swiper-slide__icon:hover svg {
   fill: #fff;
-  transition: 0.3s ease;
 }
 .swiper-slide__block {
   width: 205px;
@@ -1204,22 +1211,19 @@
   height: 47px;
   border-radius: 90px;
   background: #FFF;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
-.swiper-slide__button:active {
-  background-color: blanchedalmond;
-  transition: 0.1s;
+.swiper-slide__button svg {
+  fill: #8C3213;
 }
-.swiper-slide__button:active path {
-  fill: #fff;
-  transition: 0.3s;
+.swiper-slide__button:hover {
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .swiper-slide .swiper-slide__button__active {
   background-color: #8C3213;
 }
-.swiper-slide .swiper-slide__button__active svg path {
+.swiper-slide .swiper-slide__button__active svg {
   fill: #fff;
 }
 
@@ -1357,17 +1361,21 @@
   height: 200px;
 }
 .partner__slide {
-  width: 1px;
-  height: 126px;
+  width: 200px;
+  height: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #FFF;
   border-radius: 20px;
 }
+.partner__slide img {
+  width: 120px;
+  height: 60px;
+}
 .partner__next, .partner__prev {
   background-color: #84BE51;
-  top: 52px;
+  top: 42px;
 }
 .partner__next svg, .partner__prev svg {
   fill: #fff;
@@ -1585,23 +1593,6 @@
   margin-left: 10px;
   cursor: pointer;
 }
-.footer__call {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 1px solid #8C3213;
-  transition: 0.3s ease;
-}
-.footer__call svg {
-  fill: #8C3213;
-}
-.footer__call:hover {
-  background-color: #8C3213;
-}
-.footer__call:hover svg {
-  fill: #fff;
-  transition: 0.3s ease;
-}
 .footer__icon {
   width: 16px;
   height: 16px;
@@ -1623,7 +1614,7 @@
   flex-direction: row;
   align-items: center;
 }
-.footer__email-icon {
+.footer__icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1631,10 +1622,13 @@
   transition: 0.3s ease;
   cursor: pointer;
 }
-.footer__email-icon:hover {
+.footer__icon svg {
+  fill: #8C3213;
+}
+.footer__icon:hover {
   background-color: #8C3213;
 }
-.footer__email-icon:hover svg path {
+.footer__icon:hover svg {
   fill: #fff;
   transition: 0.3s ease;
 }
@@ -1922,25 +1916,25 @@
   height: 44px;
   border-radius: 90px;
   border: 1px solid #E74E13;
-  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
   font-size: 16px;
   font-weight: 700;
   background-color: white;
+  color: #E74E13;
   cursor: pointer;
   z-index: 1;
+  transition: 0.3s ease;
 }
 .shopping__button svg {
   margin: 0px 10px;
-}
-.shopping__next {
-  color: #E74E13;
-}
-.shopping__next svg path {
   fill: #E74E13;
+  transition: 0.3s ease;
 }
-.shopping__buy {
+.shopping__button:hover {
   background-color: #E74E13;
-  color: #fff;
+  color: white;
+}
+.shopping__button:hover svg {
+  fill: white;
 }
 @media (max-width: 1030px) {
   .shopping__block {

@@ -1,7 +1,7 @@
 const CATALOG = [
     {
         id: 'el1',
-        img: 'image/27.png',
+        img: 'image/goods1.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
@@ -9,28 +9,28 @@ const CATALOG = [
     },
     {
         id: 'el2',
-        img: 'image/28.png',
+        img: 'image/goods2.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '589 грн',
         quantity: '1'
 
     }, {
         id: 'el3',
-        img: 'image/29.png',
+        img: 'image/goods3.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '200 грн',
         quantity: '1'
 
     }, {
         id: 'el4',
-        img: 'image/30.png',
+        img: 'image/goods4.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     }, {
         id: 'el5',
-        img: 'image/27.png',
+        img: 'image/goods1.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
@@ -38,21 +38,21 @@ const CATALOG = [
     },
     {
         id: 'el6',
-        img: 'image/28.png',
+        img: 'image/goods2.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '589 грн',
         quantity: '1'
 
     }, {
         id: 'el7',
-        img: 'image/29.png',
+        img: 'image/goods3.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '200 грн',
         quantity: '1'
 
     }, {
         id: 'el8',
-        img: 'image/30.png',
+        img: 'image/goods4.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
@@ -60,7 +60,7 @@ const CATALOG = [
     },
     {
         id: 'el9',
-        img: 'image/27.png',
+        img: 'image/goods1.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
@@ -68,21 +68,21 @@ const CATALOG = [
     },
     {
         id: 'el10',
-        img: 'image/28.png',
+        img: 'image/goods2.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '589 грн',
         quantity: '1'
 
     }, {
         id: 'el11',
-        img: 'image/29.png',
+        img: 'image/goods3.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '200 грн',
         quantity: '1'
 
     }, {
         id: 'el12',
-        img: 'image/30.png',
+        img: 'image/goods4.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
@@ -90,21 +90,21 @@ const CATALOG = [
     },
     {
         id: 'el13',
-        img: 'image/28.png',
+        img: 'image/goods1.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '589 грн',
         quantity: '1'
 
     }, {
         id: 'el14',
-        img: 'image/29.png',
+        img: 'image/goods2.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '200 грн',
         quantity: '1'
 
     }, {
         id: 'el15',
-        img: 'image/30.png',
+        img: 'image/goods3.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
@@ -112,7 +112,7 @@ const CATALOG = [
     },
     {
         id: 'el16',
-        img: 'image/30.png',
+        img: 'image/goods4.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
@@ -120,14 +120,14 @@ const CATALOG = [
     },
     {
         id: 'el17',
-        img: 'image/29.png',
+        img: 'image/goods1.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '200 грн',
         quantity: '1'
 
     }, {
         id: 'el18',
-        img: 'image/30.png',
+        img: 'image/goods2.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
@@ -135,14 +135,14 @@ const CATALOG = [
     },
     {
         id: 'el19',
-        img: 'image/30.png',
+        img: 'image/goods3.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     },{
         id: 'el20',
-        img: 'image/30.png',
+        img: 'image/goods4.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
@@ -153,7 +153,7 @@ const CATALOG = [
 const CATALOGSHARES = [
     {
         id: 'el21',
-        img: 'image/27.png',
+        img: 'image/goods1.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
@@ -161,140 +161,140 @@ const CATALOGSHARES = [
     },
     {
         id: 'el22',
-        img: 'image/28.png',
+        img: 'image/goods2.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '589 грн',
         quantity: '1'
 
     }, {
-        id: 'el3',
-        img: 'image/29.png',
+        id: 'el23',
+        img: 'image/goods3.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '200 грн',
         quantity: '1'
 
     }, {
-        id: 'el4',
-        img: 'image/30.png',
+        id: 'el24',
+        img: 'image/goods4.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     }, {
-        id: 'el5',
-        img: 'image/27.png',
+        id: 'el25',
+        img: 'image/goods1.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     },
     {
-        id: 'el6',
-        img: 'image/28.png',
+        id: 'el26',
+        img: 'image/goods2.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '589 грн',
         quantity: '1'
 
     }, {
-        id: 'el7',
-        img: 'image/29.png',
+        id: 'el27',
+        img: 'image/goods3.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '200 грн',
         quantity: '1'
 
     }, {
-        id: 'el8',
-        img: 'image/30.png',
+        id: 'el28',
+        img: 'image/goods4.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     },
     {
-        id: 'el9',
-        img: 'image/27.png',
+        id: 'el29',
+        img: 'image/goods1.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     },
     {
-        id: 'el10',
-        img: 'image/28.png',
+        id: 'el30',
+        img: 'image/goods2.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '589 грн',
         quantity: '1'
 
     }, {
-        id: 'el11',
-        img: 'image/29.png',
+        id: 'el31',
+        img: 'image/goods3.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '200 грн',
         quantity: '1'
 
     }, {
-        id: 'el12',
-        img: 'image/30.png',
+        id: 'el32',
+        img: 'image/goods4.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     },
     {
-        id: 'el13',
-        img: 'image/28.png',
+        id: 'el33',
+        img: 'image/goods1.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '589 грн',
         quantity: '1'
 
     }, {
-        id: 'el14',
-        img: 'image/29.png',
+        id: 'el34',
+        img: 'image/goods2.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '200 грн',
         quantity: '1'
 
     }, {
-        id: 'el15',
-        img: 'image/30.png',
+        id: 'el35',
+        img: 'image/goods3.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     },
     {
-        id: 'el16',
-        img: 'image/30.png',
+        id: 'el36',
+        img: 'image/goods4.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     },
     {
-        id: 'el17',
-        img: 'image/29.png',
+        id: 'el37',
+        img: 'image/goods1.png',
         name: 'Скор 250 ЕС к.э.',
         prise: '200 грн',
         quantity: '1'
 
     }, {
-        id: 'el18',
-        img: 'image/30.png',
+        id: 'el38',
+        img: 'image/goods2.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     },
     {
-        id: 'el19',
-        img: 'image/30.png',
+        id: 'el39',
+        img: 'image/goods3.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'
 
     },{
-        id: 'el20',
-        img: 'image/30.png',
+        id: 'el40',
+        img: 'image/goods4.png',
         name: 'Петунія Софістика F1',
         prise: '20 грн',
         quantity: '1'

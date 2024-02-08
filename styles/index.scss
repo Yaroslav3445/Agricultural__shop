@@ -25,7 +25,7 @@
 .container {
     width: 100%;
     min-height: 100%;
-    background: url('../image/14.png');
+    background: url('../image/background.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -144,7 +144,6 @@
         display: none;
     }
 
-
     &__info {
         overflow: hidden;
         width: 0px;
@@ -166,7 +165,6 @@
         margin: 17px 0px 0px 12px;
     }
 
-
     &__item {
         display: flex;
         justify-content: center;
@@ -185,7 +183,6 @@
         }
     }
 
-
     &__register {
         width: 159px;
         height: 21px;
@@ -193,6 +190,7 @@
         flex-direction: row;
         font-size: 15px;
         margin: 0px 5px;
+        cursor: pointer;
     }
 
     &__line {
@@ -211,11 +209,9 @@
         justify-content: space-around;
     }
 
-
     &__link {
         text-decoration: none;
     }
-
 
     &__logo {
         display: flex;
@@ -224,11 +220,9 @@
         padding: 20px 5px;
     }
 
-
     &__logImg {
         margin-right: 20px;
     }
-
 
     &__form {
         width: 911px;
@@ -293,6 +287,8 @@
 
             &:hover {
                 background-color: #8C3213;
+                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+
             }
 
             &:hover svg {
@@ -348,8 +344,6 @@
             text-decoration: none;
             color: #000000;
             z-index: 1;
-
-
         }
 
         &__href {
@@ -361,10 +355,7 @@
             z-index: 1;
         }
 
-
-
     }
-
 
     #arrow {
         transition: transform, 0.3s ease;
@@ -393,6 +384,7 @@
 
             &:hover {
                 background-color: #8C3213;
+                box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
 
                 .buy__shopIcon {
                     transition: 0.3s ease;
@@ -502,6 +494,7 @@
             z-index: 2;
             max-height: 0;
             transition: 0.6s ease;
+            margin-left: 0px;
         }
 
         .active {
@@ -553,6 +546,10 @@
                 height: 40px;
                 border: 1px solid #fff;
                 border-radius: 50%;
+
+                svg {
+                    fill: white;
+                }
 
                 div {
                     position: absolute;
@@ -946,7 +943,7 @@
         height: 26%;
         top: -14%;
         right: 2%;
-        background-image: url('../image/20.png');
+        background-image: url('../image/leaf1.png');
     }
 
 
@@ -955,7 +952,7 @@
         height: 26%;
         bottom: 15%;
         left: -19%;
-        background-image: url('../image/21.png');
+        background-image: url('../image/leaf2.png');
     }
 
 
@@ -964,7 +961,7 @@
         height: 16%;
         bottom: 10%;
         left: -14%;
-        background-image: url('../image/20.png');
+        background-image: url('../image/leaf1.png');
     }
 
     @media (max-width:1000px) {
@@ -1170,6 +1167,8 @@
 
         img {
             max-width: 100%;
+            border-top-right-radius: 171px;
+            border-bottom-left-radius: 200px;
         }
     }
 
@@ -1195,7 +1194,7 @@
         height: 32%;
         left: -8%;
         bottom: 16%;
-        background-image: url('../image/21.png');
+        background-image: url('../image/leaf2.png');
     }
 
     &__leaf2 {
@@ -1205,7 +1204,7 @@
         height: 20%;
         left: 13%;
         bottom: -3%;
-        background-image: url('../image/20.png');
+        background-image: url('../image/leaf1.png');
     }
 
 
@@ -1436,9 +1435,6 @@
         cursor: pointer;
         transition: 0.3s ease;
 
-        &:hover {
-            box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.15);
-        }
     }
 
 
@@ -1463,13 +1459,15 @@
         cursor: pointer;
         transition: 0.3s ease;
 
+        svg {
+            fill: #8C3213;
+        }
+
         &:hover {
             background-color: #8C3213;
-            color: pointer;
 
-            svg path {
+            svg {
                 fill: #fff;
-                transition: 0.3s ease;
             }
         }
     }
@@ -1515,25 +1513,23 @@
         height: 47px;
         border-radius: 90px;
         background: #FFF;
-        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
         cursor: pointer;
-        transition: 1s ease;
+        transition: 0.5s ease;
 
-        &:active {
-            background-color: blanchedalmond;
-            transition: 0.1s;
+        svg {
+            fill: #8C3213;
         }
 
-        &:active path {
-            fill: #fff;
-            transition: 0.3s;
+        &:hover {
+            box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
         }
+
     }
 
     .swiper-slide__button__active {
         background-color: #8C3213;
 
-        svg path {
+        svg {
             fill: #fff;
         }
     }
@@ -1664,7 +1660,6 @@
 
 }
 
-
 .swiper-button-next,
 .swiper-button-prev {
     position: absolute;
@@ -1694,6 +1689,7 @@
         }
     }
 }
+
 .partner {
     position: relative;
     height: clamp(240px, 50vw, 500px);
@@ -1709,22 +1705,26 @@
     }
 
     &__slide {
-        width: 1px;
-        height: 126px;
+        width: 200px;
+        height: 110px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #FFF;
         border-radius: 20px;
 
+        img {
+            width: 120px;
+            height: 60px;
+        }
     }
 
     &__next,
     &__prev {
         background-color: #84BE51;
-        top: 52px;
+        top: 42px;
 
-        svg  {
+        svg {
             fill: #fff;
         }
 
@@ -1994,29 +1994,6 @@
         cursor: pointer;
     }
 
-    &__call {
-        @extend %display;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 1px solid #8C3213;
-        transition: 0.3s ease;
-
-        svg{
-            fill: #8C3213;
-        }
-
-        &:hover {
-            background-color: #8C3213;
-        }
-
-        &:hover svg {
-            fill: #fff;
-            transition: 0.3s ease;
-        }
-
-    }
-
     &__icon {
         width: 16px;
         height: 16px;
@@ -2046,7 +2023,7 @@
         align-items: center
     }
 
-    &__email-icon {
+    &__icon {
         @extend %display;
         width: 40px;
         height: 40px;
@@ -2055,10 +2032,14 @@
         transition: 0.3s ease;
         cursor: pointer;
 
+        svg {
+            fill: #8C3213;
+        }
+
         &:hover {
             background-color: #8C3213;
 
-            svg path {
+            svg {
                 fill: #fff;
                 transition: 0.3s ease;
             }
@@ -2410,31 +2391,31 @@
         height: 44px;
         border-radius: 90px;
         border: 1px solid #E74E13;
-        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.15);
         font-size: 16px;
         font-weight: 700;
         background-color: white;
+        color: #E74E13;
         cursor: pointer;
         z-index: 1;
+        transition: 0.3s ease;
 
         svg {
             margin: 0px 10px;
-        }
-
-    }
-
-    &__next {
-        color: #E74E13;
-
-        svg path {
             fill: #E74E13;
+            transition: 0.3s ease;
         }
+
+        &:hover {
+            background-color: #E74E13;
+            color: white;
+
+            svg {
+                fill: white;
+            }
+        }
+
     }
 
-    &__buy {
-        background-color: #E74E13;
-        color: #fff;
-    }
 
     @media (max-width:1030px) {
         &__block {

@@ -12,7 +12,9 @@ class Castle {
 </div>
 `;
         let html2 = `
-<img src="image/13.svg" alt="">
+    <svg width="15" height="17">
+        <use xlink:href="sprite.svg#castle" />
+    </svg>
 <div class="buy__counter">${count}</div>
 `;
         castleProduct.innerHTML = html

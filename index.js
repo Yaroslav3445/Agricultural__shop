@@ -26,12 +26,12 @@ btnMenu.addEventListener('click', function (event) {
         line1.style.transform = 'rotate(45deg) translate(9px, 6px)'
         line2.style = 'width:0px; overflow: hidden;'
         line3.style.transform = 'rotate(134deg) translate(-8px, 5px)'
-        console.log('1')
     } else {
-        line1.style.transform = ''
-        line2.style = ''
-        line3.style.transform = ''
-        console.log('2')
+        if (line3.style.transform === 'rotate(134deg) translate(-8px, 5px)') {
+            line1.style.transform = ''
+            line2.style = ''
+            line3.style.transform = ''
+        }
     }
 })
 baner.addEventListener('click', () => {
@@ -50,6 +50,9 @@ baner.addEventListener('click', () => {
 item.forEach(function (item) {
     item.addEventListener('click', () => {
         menu.classList.remove('active')
+        line1.style.transform = ''
+        line2.style = ''
+        line3.style.transform = ''
     })
 })
 

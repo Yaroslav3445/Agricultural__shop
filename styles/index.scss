@@ -95,6 +95,7 @@
 
     &__menu {
         width: clamp(680px, 72vw, 819px);
+        margin-left: 5px;
         @extend %green;
         @extend %font;
         display: flex;
@@ -294,13 +295,16 @@
                 background-color: #8C3213;
             }
 
-            &:hover path {
-                fill: #fff;
+            &:hover svg {
+                fill: #ffffff;
+            }
+
+            svg {
+                fill: #8C3213;
+                stroke-width: 0.4px;
                 transition: 0.3s ease;
             }
         }
-
-
 
         &__number {
             position: relative;
@@ -383,12 +387,14 @@
             transition: background-color 0.3s ease;
             cursor: pointer;
 
-
+            .buy__shopIcon {
+                fill: #8C3213;
+            }
 
             &:hover {
                 background-color: #8C3213;
 
-                .buy__shopIcon path {
+                .buy__shopIcon {
                     transition: 0.3s ease;
                     fill: white;
                 }
@@ -579,6 +585,10 @@
             flex-direction: row;
             padding: 0px 4px 20px 0px;
             justify-content: space-between;
+
+            svg {
+                fill: white;
+            }
         }
 
 
@@ -746,21 +756,19 @@
         transition: 0.3s ease;
         margin: 5px 10px 5px 10px;
 
+        svg {
+            fill: #84BE51;
+        }
+
         &:hover {
             background: #E74E13;
             color: #fff;
             border: 1px solid #E74E13;
         }
 
-        &:hover svg path {
-            fill: #fff;
+        &:hover svg {
+            fill: white;
             transition: 0.3s ease;
-        }
-    }
-
-    &__color {
-        &:hover svg path {
-            stroke: #fff;
         }
     }
 
@@ -1310,7 +1318,6 @@
 
 }
 
-
 .slider {
     max-width: 1110px;
     position: relative;
@@ -1325,8 +1332,8 @@
     }
 
     &__window {
-        width: 1110px;
         height: fit-content;
+        padding: 0px 0px 0px 5px;
     }
 
 
@@ -1657,6 +1664,36 @@
 
 }
 
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #84BE51;
+    border-radius: 50%;
+    transition: 0.3s ease;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: #84BE51;
+    }
+
+    &::after {
+        content: '';
+        display: none;
+    }
+
+    &:hover {
+        background-color: #84BE51;
+
+        svg {
+            transition: 0.3s ease;
+            fill: #fff;
+        }
+    }
+}
 .partner {
     position: relative;
     height: clamp(240px, 50vw, 500px);
@@ -1684,16 +1721,10 @@
 
     &__next,
     &__prev {
-        position: absolute;
-        width: 70px;
-        height: 70px;
-        border: 1px solid #84BE51;
-        border-radius: 50%;
-        transition: background-color 0.3s ease;
         background-color: #84BE51;
         top: 52px;
 
-        svg path {
+        svg  {
             fill: #fff;
         }
 
@@ -1768,36 +1799,6 @@
 }
 
 
-
-.swiper-button-next,
-.swiper-button-prev {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    border: 1px solid #84BE51;
-    border-radius: 50%;
-    transition: background-color 0.3s ease;
-
-    svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    &::after {
-        content: '';
-        display: none;
-
-    }
-
-    &:hover {
-        transition: background-color 0.3s ease;
-        background-color: #84BE51;
-
-        svg path {
-            fill: #fff;
-        }
-    }
-}
 
 .seeds {
 
@@ -2001,12 +2002,15 @@
         border: 1px solid #8C3213;
         transition: 0.3s ease;
 
+        svg{
+            fill: #8C3213;
+        }
 
         &:hover {
             background-color: #8C3213;
         }
 
-        &:hover path {
+        &:hover svg {
             fill: #fff;
             transition: 0.3s ease;
         }

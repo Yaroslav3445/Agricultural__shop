@@ -83,6 +83,7 @@
 }
 .header__menu {
   width: clamp(680px, 72vw, 819px);
+  margin-left: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -240,8 +241,12 @@
 .header .phone__icon:hover {
   background-color: #8C3213;
 }
-.header .phone__icon:hover path {
-  fill: #fff;
+.header .phone__icon:hover svg {
+  fill: #ffffff;
+}
+.header .phone__icon svg {
+  fill: #8C3213;
+  stroke-width: 0.4px;
   transition: 0.3s ease;
 }
 .header .phone__number {
@@ -307,10 +312,13 @@
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
+.header .buy__favorite .buy__shopIcon {
+  fill: #8C3213;
+}
 .header .buy__favorite:hover {
   background-color: #8C3213;
 }
-.header .buy__favorite:hover .buy__shopIcon path {
+.header .buy__favorite:hover .buy__shopIcon {
   transition: 0.3s ease;
   fill: white;
 }
@@ -467,6 +475,9 @@
     padding: 0px 4px 20px 0px;
     justify-content: space-between;
   }
+  .header__mobile-block svg {
+    fill: white;
+  }
   .header__heard-mobile {
     width: 40px;
     height: 40px;
@@ -598,17 +609,17 @@
   transition: 0.3s ease;
   margin: 5px 10px 5px 10px;
 }
+.baner__li svg {
+  fill: #84BE51;
+}
 .baner__li:hover {
   background: #E74E13;
   color: #fff;
   border: 1px solid #E74E13;
 }
-.baner__li:hover svg path {
-  fill: #fff;
+.baner__li:hover svg {
+  fill: white;
   transition: 0.3s ease;
-}
-.baner__color:hover svg path {
-  stroke: #fff;
 }
 .baner__mobile-text:hover svg path {
   fill: #fff;
@@ -1047,9 +1058,9 @@
   height: 440px;
 }
 .slider__window {
-  width: 1110px;
   height: -moz-fit-content;
   height: fit-content;
+  padding: 0px 0px 0px 5px;
 }
 .slider__prev {
   left: -140px;
@@ -1302,6 +1313,36 @@
     flex-direction: column;
   }
 }
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border: 1px solid #84BE51;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+.swiper-button-next svg,
+.swiper-button-prev svg {
+  width: 20px;
+  height: 20px;
+  fill: #84BE51;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+  display: none;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #84BE51;
+}
+.swiper-button-next:hover svg,
+.swiper-button-prev:hover svg {
+  transition: 0.3s ease;
+  fill: #fff;
+}
+
 .partner {
   position: relative;
   height: clamp(240px, 50vw, 500px);
@@ -1325,16 +1366,10 @@
   border-radius: 20px;
 }
 .partner__next, .partner__prev {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  border: 1px solid #84BE51;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
   background-color: #84BE51;
   top: 52px;
 }
-.partner__next svg path, .partner__prev svg path {
+.partner__next svg, .partner__prev svg {
   fill: #fff;
 }
 .partner__next svg, .partner__prev svg {
@@ -1387,35 +1422,6 @@
   .partner__slide:nth-child(n+11) {
     display: none;
   }
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  width: 70px;
-  height: 70px;
-  border: 1px solid #84BE51;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
-.swiper-button-next svg,
-.swiper-button-prev svg {
-  width: 20px;
-  height: 20px;
-}
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  content: "";
-  display: none;
-}
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  transition: background-color 0.3s ease;
-  background-color: #84BE51;
-}
-.swiper-button-next:hover svg path,
-.swiper-button-prev:hover svg path {
-  fill: #fff;
 }
 
 .seeds__block {
@@ -1586,10 +1592,13 @@
   border: 1px solid #8C3213;
   transition: 0.3s ease;
 }
+.footer__call svg {
+  fill: #8C3213;
+}
 .footer__call:hover {
   background-color: #8C3213;
 }
-.footer__call:hover path {
+.footer__call:hover svg {
   fill: #fff;
   transition: 0.3s ease;
 }

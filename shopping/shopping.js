@@ -1,5 +1,4 @@
-// const modalContent = document.querySelector('.shopping');
-// const closeModalButton = document.querySelector('#close-modal');
+
 const exit = document.querySelector('.modal-exit')
 const ROOT__SHOPPING = document.getElementById("shopping")
 class Shopping {
@@ -134,9 +133,3 @@ class Shopping {
 
 const shoppingPage = new Shopping()
 
-// function openModal() {
-//   const modalBackground = document.querySelector('.modal-background');
-//       modalBackground.style.height = '100%';
-//       modalBackground.style.overflow = 'visible';
-//   };
-// ROOT__SHOPPING.addEventListener('click', openModal)

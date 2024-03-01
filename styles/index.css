@@ -936,8 +936,8 @@
 }
 .about__image img {
   max-width: 100%;
-  border-top-right-radius: 171px;
-  border-bottom-left-radius: 200px;
+  border-top-right-radius: 31%;
+  border-bottom-left-radius: 42%;
 }
 .about__h1 {
   font-size: clamp(25px, 4.5vw, 55px);
